@@ -52,7 +52,7 @@ def generate_doc():
             selected_keywords.append("а5")
         if var_width_open_tribun.get():
             selected_keywords.append("а6")
-        if var_mgn.get():
+        if var_mgn_corridors.get():
             selected_keywords.append("а7")
         if var_corridor_long.get():
             selected_keywords.append("а8")
@@ -128,7 +128,7 @@ var_f21_zal_width = tk.BooleanVar()
 var_f21_width_luk_tribun = tk.BooleanVar()
 var_f21_width_cinema = tk.BooleanVar()
 var_width_open_tribun = tk.BooleanVar()
-var_mgn = tk.BooleanVar()
+var_mgn_corridors = tk.BooleanVar()
 var_corridor_long = tk.BooleanVar()
 var_f5_corridor_long = tk.BooleanVar()
 var_f11_width_hosital = tk.BooleanVar()
@@ -145,7 +145,7 @@ tk.Checkbutton(scrollable_frame, text="Ф2.1 Залы ширина проход�
 tk.Checkbutton(scrollable_frame, text="Ф2.1 Залы ширина эвакуационных люков трибун", variable=var_f21_width_luk_tribun).pack(anchor="w")
 tk.Checkbutton(scrollable_frame, text="Ф2.1 Залы ширина проходов в кинотеатре вместимостью более 100 чел", variable=var_f21_width_cinema).pack(anchor="w")
 tk.Checkbutton(scrollable_frame, text="Ф2.1 трибуны (залы) на открытом воздухе. Ширина путей эвакуации на трибунах \nв зависимости от числа людей на трибунах", variable=var_width_open_tribun).pack(anchor="w")
-tk.Checkbutton(scrollable_frame, text="Для МГН", variable=var_mgn).pack(anchor="w")
+tk.Checkbutton(scrollable_frame, text="Для МГН", variable=var_mgn_corridors).pack(anchor="w")
 tk.Checkbutton(scrollable_frame, text="Коридоры длиной более 60м для всех зданий", variable=var_corridor_long).pack(anchor="w")
 tk.Checkbutton(scrollable_frame, text="Ф5 Производственные и/или склады. Коридоры длиной более 60м", variable=var_f5_corridor_long).pack(anchor="w")
 tk.Checkbutton(scrollable_frame, text="Ф1.1 Больницы, специализированные дома престарелых и инвалидов (неквартирные).\nКоридоры длиной более 42м", variable=var_f11_width_hosital).pack(anchor="w")
